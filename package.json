@@ -1,0 +1,23 @@
+{
+  "name": "test-ci-cd-node-backend-project-docker-kubernetes-jenkins",
+  "version": "1.0.0",
+  "description": "test ci cd node backend project docker kubernetes jenkins",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachira-madhushan/test-ci-cd-node-backend-project-docker-kubernetes-jenkins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachira-madhushan/test-ci-cd-node-backend-project-docker-kubernetes-jenkins/issues"
+  },
+  "homepage": "https://github.com/sachira-madhushan/test-ci-cd-node-backend-project-docker-kubernetes-jenkins#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
