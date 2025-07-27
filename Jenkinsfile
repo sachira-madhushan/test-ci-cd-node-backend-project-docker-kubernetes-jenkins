@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Clone Branch') {
       steps {
-        git branch: 'production', url: 'https://github.com/sachira-madhushan/test-ci-cd-node-backend-project-docker-kubernetes-jenkins.git'
+        git branch: 'main', url: 'https://github.com/sachira-madhushan/test-ci-cd-node-backend-project-docker-kubernetes-jenkins.git'
       }
     }
 
