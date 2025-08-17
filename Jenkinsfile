@@ -30,10 +30,20 @@ pipeline {
       }
     }
 
-    stage('Deploy to Kubernetes') {
+    stage('Run Docker Container') {
       steps {
-        sh 'kubectl apply -f k8s/backend-deployment.yaml'
+        script {
+          // Stop previous container if running
+          sh 'docker rm -f backend || true'
+          // Run the new container
+          sh 'docker run -d --name backend -p 3000:3000 sachiramadhushan123/test-ci-cd-backend:v1'
+        }
       }
-    }
+
+    // stage('Deploy to Kubernetes') {
+    //   steps {
+    //     sh 'kubectl apply -f k8s/backend-deployment.yaml'
+    //   }
+    // }
   }
 }
