@@ -39,7 +39,7 @@ pipeline {
           sh 'docker run -d --name backend -p 3000:3000 sachiramadhushan123/test-ci-cd-backend:v1'
         }
       }
-
+    }
     // stage('Deploy to Kubernetes') {
     //   steps {
     //     sh 'kubectl apply -f k8s/backend-deployment.yaml'
